@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochila Solidária</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/img/image-removebg-preview (1).png">
+    
+</head>
+<body class="bg-[#f8f9fc] min-h-screen text-slate-800 flex flex-col justify-between">
+    
+
+    <div>
+        <!-- Header Roxo Sólido -->
+        <header class="bg-[#9333ea] text-white shadow-md">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="bg-white/10 p-2.5 rounded-xl border border-white/20">
+                        <!-- <i data-lucide="backpack" class="w-6 h-6 text-yellow-300"></i> -->
+                         <img src="assets/img/image-removebg-preview (1).png" alt="logo escola" width="50px">
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-xl tracking-wide">Mochila Solidária</h1>
+                        <p class="text-xs text-purple-200 font-medium">Instituto Noroeste</p>
+                    </div>
+                </div>
+
+                <!-- Navegação Superior -->
+                <nav class="flex items-center gap-2 bg-purple-900/40 p-1.5 rounded-full border border-purple-400/30 flex-wrap justify-center">
+                    <button onclick="showPage('home')" id="btn-home" class="nav-btn flex items-center gap-2 px-5 py-2 rounded-full font-bold text-sm transition-all bg-white text-purple-900 shadow-sm">
+                        <i data-lucide="heart" class="w-4 h-4"></i> Home
+                    </button>
+                    <button onclick="showPage('doar')" id="btn-doar" class="nav-btn flex items-center gap-2 px-5 py-2 rounded-full font-bold text-sm transition-all text-white hover:bg-white/10">
+                        <i data-lucide="hand-heart" class="w-4 h-4"></i> Quero Doar
+                    </button>
+                    <button onclick="showPage('receber')" id="btn-receber" class="nav-btn flex items-center gap-2 px-5 py-2 rounded-full font-bold text-sm transition-all text-white hover:bg-white/10">
+                        <i data-lucide="graduation-cap" class="w-4 h-4"></i> Quero Receber
+                    </button>
+                    <button onclick="showPage('admin')" id="btn-admin" class="nav-btn flex items-center gap-2 px-5 py-2 rounded-full font-bold text-sm transition-all text-white hover:bg-white/10">
+                        <i data-lucide="layout-grid" class="w-4 h-4"></i> Administração
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <main class="max-w-7xl mx-auto px-4 py-8">
+            
+            <!-- HOME PAGE -->
+            <section id="home" class="page block animate-in">
+                <!-- Banner Destaque Roxo Claro -->
+                <div class="bg-[#f3e8ff] border border-purple-200 rounded-3xl p-10 text-center mb-10 shadow-sm">
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-[#581c87] tracking-tight mb-3">
+                        
+                    </h2>
+                    <h3 class="text-3xl md:text-5xl font-extrabold text-[#db2777] tracking-tight mb-4">
+                        MOCHILA SOLIDÁRIA
+                    </h3>
+                    <p class="text-slate-600 font-semibold italic text-base md:text-lg">
+                        "Mais que doações, é investimento em um futuro melhor!"
+                    </p>
+                </div>
+
+                <!-- Grid de Cartões -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Objetivo -->
+                    <div class="bg-pink-50/70 border border-pink-200/80 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="p-3 bg-pink-100 rounded-2xl text-pink-700">
+                                    <i data-lucide="target" class="w-6 h-6"></i>
+                                </div>
+                                <h4 class="font-extrabold text-lg text-pink-900 tracking-wide">OBJETIVO</h4>
+                            </div>
+                            <p class="text-slate-600 font-medium leading-relaxed mb-6">
+                                Facilitar o acesso a materiais didáticos e escolares por meio de doações, ajudando estudantes e famílias que precisam.
+                            </p>
+                        </div>
+                        <p class="text-center font-bold text-pink-700 italic text-sm">
+                            Educação também é um direito! ♡
+                        </p>
+                    </div>
+
+                    <!-- Como Funciona -->
+                    <div class="bg-blue-50/70 border border-blue-200/80 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="p-3 bg-blue-100 rounded-2xl text-blue-700">
+                                    <i data-lucide="settings" class="w-6 h-6"></i>
+                                </div>
+                                <h4 class="font-extrabold text-lg text-blue-900 tracking-wide">COMO FUNCIONA</h4>
+                            </div>
+                            <ul class="space-y-3 font-medium text-slate-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
+                                    Cadastro de materiais disponíveis.
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+                                    Solicitação do item desejado.
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
+                                    Escola confere e combina a entrega.
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">4</span>
+                                    O material é reutilizado, reduzindo desperdício.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- O Que Doar -->
+                    <div class="bg-amber-50/70 border border-amber-200/80 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="p-3 bg-amber-100 rounded-2xl text-amber-700">
+                                    <i data-lucide="gift" class="w-6 h-6"></i>
+                                </div>
+                                <h4 class="font-extrabold text-lg text-amber-900 tracking-wide">O QUE DOAR?</h4>
+                            </div>
+                            <ul class="space-y-3 font-medium text-slate-600 mb-6">
+                                <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-amber-600 shrink-0"></i> Livros didáticos</li>
+                                <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-amber-600 shrink-0"></i> Cadernos com folhas</li>
+                                <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-amber-600 shrink-0"></i> Mochilas e Estojos</li>
+                                <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-amber-600 shrink-0"></i> Lápis, canetas, borrachas</li>
+                                <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-amber-600 shrink-0"></i> Réguas e calculadoras</li>
+                            </ul>
+                        </div>
+                        <p class="text-center font-bold text-amber-800 italic text-sm">
+                            Doe o que puder! 🌟
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DOAR PAGE -->
+            <section id="doar" class="page hidden animate-in">
+                <div class="max-w-2xl mx-auto bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm">
+                    <div class="text-center mb-8">
+                        <div class="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mx-auto mb-4 text-pink-600">
+                            <i data-lucide="heart-handshake" class="w-8 h-8"></i>
+                        </div>
+                        <h2 class="text-3xl font-extrabold text-slate-900 mb-2">Quero Doar</h2>
+                        <p class="text-slate-500 font-medium">Preencha o formulário abaixo para registrar sua doação. A escola entrará em contato!</p>
+                    </div>
+
+                    <form onsubmit="handleDoacaoSubmit(event)" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Nome Completo</label>
+                            <input type="text" required placeholder="Ex: Maria da Silva" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-100 outline-none font-medium">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Telefone / Contato</label>
+                            <input type="text" required placeholder="(00) 00000-0000" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-100 outline-none font-medium">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Material a ser doado</label>
+                            <input type="text" required placeholder="Ex: Mochila azul, 3 cadernos..." class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-100 outline-none font-medium">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Estado do Item</label>
+                            <select required class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-100 outline-none font-medium bg-white">
+                                <option value="">Selecione...</option>
+                                <option value="Novo">Novo</option>
+                                <option value="Usado (Bom estado)">Usado (Bom estado)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-[#db2777] hover:bg-[#be185d] text-white font-extrabold py-4 rounded-2xl shadow-lg shadow-pink-200 transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="heart" class="w-5 h-5"></i> Enviar Intenção de Doação
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- RECEBER PAGE -->
+            <section id="receber" class="page hidden animate-in">
+                <div id="receber-grid-view">
+                    <div class="max-w-4xl mx-auto bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm text-center mb-8">
+                        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4 text-blue-600">
+                            <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+                        </div>
+                        <h2 class="text-3xl font-extrabold text-slate-900 mb-2">Quero Receber</h2>
+                        <p class="text-slate-500 font-medium">Selecione abaixo o tipo de material que você ou seu filho está precisando no momento:</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                        <div onclick="abrirFormReceber('Mochilas')" class="bg-blue-50/70 border border-blue-200/80 p-8 rounded-3xl flex flex-col items-center justify-center text-blue-800 hover:shadow-md transition-all cursor-pointer font-extrabold text-lg gap-4">
+                            <div class="p-4 bg-blue-100 rounded-2xl"><i data-lucide="backpack" class="w-8 h-8 text-blue-600"></i></div>
+                            Mochilas
+                        </div>
+                        <div onclick="abrirFormReceber('Cadernos')" class="bg-green-50/70 border border-green-200/80 p-8 rounded-3xl flex flex-col items-center justify-center text-green-800 hover:shadow-md transition-all cursor-pointer font-extrabold text-lg gap-4">
+                            <div class="p-4 bg-green-100 rounded-2xl"><i data-lucide="book-open" class="w-8 h-8 text-green-600"></i></div>
+                            Cadernos
+                        </div>
+                        <div onclick="abrirFormReceber('Estojos')" class="bg-pink-50/70 border border-pink-200/80 p-8 rounded-3xl flex flex-col items-center justify-center text-pink-800 hover:shadow-md transition-all cursor-pointer font-extrabold text-lg gap-4">
+                            <div class="p-4 bg-pink-100 rounded-2xl"><i data-lucide="box" class="w-8 h-8 text-pink-600"></i></div>
+                            Estojos
+                        </div>
+                        <div onclick="abrirFormReceber('Livros')" class="bg-purple-50/70 border border-purple-200/80 p-8 rounded-3xl flex flex-col items-center justify-center text-purple-800 hover:shadow-md transition-all cursor-pointer font-extrabold text-lg gap-4">
+                            <div class="p-4 bg-purple-100 rounded-2xl"><i data-lucide="book" class="w-8 h-8 text-purple-600"></i></div>
+                            Livros
+                        </div>
+                        <div onclick="abrirFormReceber('Lápis e Canetas')" class="bg-amber-50/70 border border-amber-200/80 p-8 rounded-3xl flex flex-col items-center justify-center text-amber-800 hover:shadow-md transition-all cursor-pointer font-extrabold text-lg gap-4">
+                            <div class="p-4 bg-amber-100 rounded-2xl"><i data-lucide="pen-tool" class="w-8 h-8 text-amber-600"></i></div>
+                            Lápis e Canetas
+                        </div>
+                        <div onclick="abrirFormReceber('Outros Materiais')" class="bg-slate-100 border border-slate-200 p-8 rounded-3xl flex flex-col items-center justify-center text-slate-700 hover:shadow-md transition-all cursor-pointer font-extrabold text-lg gap-4">
+                            <div class="p-4 bg-slate-200 rounded-2xl"><i data-lucide="layout-grid" class="w-8 h-8 text-slate-600"></i></div>
+                            Outros Materiais
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de Solicitação (Quando clica num item) -->
+                <div id="receber-form-view" class="hidden max-w-xl mx-auto">
+                    <button onclick="voltarReceberGrid()" class="flex items-center text-slate-500 hover:text-slate-800 font-extrabold mb-6 transition-colors">
+                        <i data-lucide="arrow-left" class="w-5 h-5 mr-2"></i> Voltar aos materiais
+                    </button>
+                    
+                    <div class="bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm">
+                        <h3 id="receber-form-titulo" class="text-2xl font-extrabold text-blue-900 mb-6 text-center">Solicitar Material</h3>
+                        <form onsubmit="handleReceberSubmit(event)" class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Nome do Aluno</label>
+                                <input type="text" required placeholder="Nome completo do estudante" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none font-medium">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Série / Turma</label>
+                                <input type="text" required placeholder="Ex: 6º Ano B" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none font-medium">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Responsável para Contato</label>
+                                <input type="text" required placeholder="Nome do pai, mãe ou responsável" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none font-medium">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Telefone de Contato</label>
+                                <input type="text" required placeholder="(00) 00000-0000" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none font-medium">
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-extrabold py-4 rounded-2xl shadow-lg shadow-blue-200 transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="send" class="w-5 h-5"></i> Enviar Solicitação
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ADMIN PAGE -->
+            <section id="admin" class="page hidden animate-in">
+                <!-- Login View -->
+                <div id="admin-login-view" class="max-w-md mx-auto bg-white border border-slate-200/80 rounded-3xl p-8 md:p-10 shadow-sm text-center mt-10">
+                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4 text-purple-600">
+                        <i data-lucide="lock" class="w-8 h-8"></i>
+                    </div>
+                    <h2 class="text-2xl font-extrabold text-slate-900 mb-2">Acesso Administrativo</h2>
+                    <p class="text-slate-500 font-medium text-sm mb-6">Faça login para gerenciar as doações e o estoque de materiais da escola.</p>
+                    
+                    <div class="space-y-4 text-left">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 mb-1 uppercase">Usuário</label>
+                            <input type="text" id="admin-user" value="admin" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-purple-500 outline-none font-medium text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 mb-1 uppercase">Senha</label>
+                            <input type="password" id="admin-pass" value="12345" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-purple-500 outline-none font-medium text-sm">
+                        </div>
+                        <button onclick="fazerLoginAdmin()" class="w-full bg-[#9333ea] hover:bg-[#7e22ce] text-white font-extrabold py-3.5 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 text-sm">
+                            <i data-lucide="log-in" class="w-4 h-4"></i> Entrar no Sistema
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Panel View -->
+                <div id="admin-panel-view" class="hidden space-y-8">
+                    <!-- Estoque de Materiais Doados -->
+                    <div class="bg-white border border-slate-200/80 rounded-3xl p-6 md:p-8 shadow-sm">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
+                            <div>
+                                <h3 class="text-2xl font-extrabold text-slate-900">Estoque de Materiais Doados</h3>
+                                <p class="text-slate-500 text-sm font-medium">Itens disponíveis para entrega imediata aos alunos.</p>
+                            </div>
+                            <span class="px-4 py-2 bg-purple-50 border border-purple-200 text-purple-900 rounded-2xl text-xs font-extrabold">Total de Itens: <span id="contador-itens">3</span></span>
+                        </div>
+
+                        <!-- Grid do Estoque -->
+                        <div id="estoque-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Renderizado via JS -->
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Doações Pendentes -->
+                        <div class="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm">
+                            <div class="flex justify-between items-center mb-6">
+                                <h3 class="font-extrabold text-lg text-purple-900">Doações Pendentes</h3>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-extrabold">3</span>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left border-collapse text-sm">
+                                    <thead>
+                                        <tr class="border-b border-slate-100 text-slate-400 font-bold uppercase text-xs">
+                                            <th class="pb-3">Doador</th>
+                                            <th class="pb-3">Item</th>
+                                            <th class="pb-3 text-right">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-slate-50 font-medium text-slate-600">
+                                        <tr>
+                                            <td class="py-4">Ana Clara</td>
+                                            <td class="py-4">Mochila Preta</td>
+                                            <td class="py-4 text-right"><span class="px-2.5 py-1 bg-amber-100 text-amber-800 rounded-md text-xs font-bold">Aguardando Entrega</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-4">Carlos Eduardo</td>
+                                            <td class="py-4">3 Cadernos Universitários</td>
+                                            <td class="py-4 text-right"><span class="px-2.5 py-1 bg-amber-100 text-amber-800 rounded-md text-xs font-bold">Aguardando Entrega</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-4">Papelaria Central</td>
+                                            <td class="py-4">Kit Lápis de Cor (10x)</td>
+                                            <td class="py-4 text-right"><span class="px-2.5 py-1 bg-yellow-100 text-yellow-800 rounded-md text-xs font-bold">Recebido - Em triagem</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Solicitações de Alunos -->
+                        <div class="bg-white border border-slate-200/80 rounded-3xl p-6 shadow-sm">
+                            <div class="flex justify-between items-center mb-6">
+                                <h3 class="font-extrabold text-lg text-blue-900">Solicitações de Alunos</h3>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-extrabold">3</span>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left border-collapse text-sm">
+                                    <thead>
+                                        <tr class="border-b border-slate-100 text-slate-400 font-bold uppercase text-xs">
+                                            <th class="pb-3">Aluno (Série)</th>
+                                            <th class="pb-3">Item Necessário</th>
+                                            <th class="pb-3 text-right">Urgência</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-slate-50 font-medium text-slate-600">
+                                        <tr>
+                                            <td class="py-4">Pedro (6º Ano)</td>
+                                            <td class="py-4">Mochila e Estojo</td>
+                                            <td class="py-4 text-right"><span class="px-2.5 py-1 bg-rose-100 text-rose-800 rounded-md text-xs font-bold">Alta</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-4">Beatriz (1º Médio)</td>
+                                            <td class="py-4">Calculadora</td>
+                                            <td class="py-4 text-right"><span class="px-2.5 py-1 bg-orange-100 text-orange-800 rounded-md text-xs font-bold">Média</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-4">Marcos (9º Ano)</td>
+                                            <td class="py-4">Cadernos</td>
+                                            <td class="py-4 text-right"><span class="px-2.5 py-1 bg-rose-100 text-rose-800 rounded-md text-xs font-bold">Alta</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- RODAPÉ FIXO EM TODAS AS PÁGINAS -->
+    <footer class="bg-[#1e293b] text-white py-8 mt-16 text-center border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-2">
+            <p class="font-bold text-base flex items-center gap-2">
+                Juntos podemos fazer a diferença! 💙
+            </p>
+            <p class="text-xs text-slate-400 font-medium">
+                Criado por Yasmin, Nicole e Samuel
+            </p>
+        </div>
+    </footer>
+
+    <!-- MODAL DE ATRIBUIÇÃO DE MATERIAL -->
+    <div id="modal-atribuir" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md rounded-3xl shadow-2xl border-4 border-purple-100 p-8 animate-in">
+            <div class="text-center mb-6">
+                <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-3 text-purple-700">
+                    <i data-lucide="user-check" class="w-7 h-7"></i>
+                </div>
+                <h3 class="font-extrabold text-2xl text-purple-900">Atribuir Material</h3>
+                <p id="modal-item-nome" class="font-bold text-slate-500 text-sm mt-1"></p>
+            </div>
+            
+            <form onsubmit="confirmarAtribuicao(event)" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Nome Completo do Aluno</label>
+                    <input type="text" id="aluno-atribuido" required placeholder="Digite o nome do estudante" class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-purple-500 outline-none font-medium">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Série / Turma</label>
+                    <input type="text" id="turma-atribuida" required placeholder="Ex: 7º Ano A" class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-purple-500 outline-none font-medium">
+                </div>
+                <div class="flex gap-3 pt-2">
+                    <button type="button" onclick="fecharModalAtribuir()" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-extrabold py-3.5 rounded-2xl transition-colors">Cancelar</button>
+                    <button type="submit" class="flex-1 bg-purple-600 hover:bg-purple-700 text-white font-extrabold py-3.5 rounded-2xl shadow-lg shadow-purple-200 transition-colors">Confirmar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
