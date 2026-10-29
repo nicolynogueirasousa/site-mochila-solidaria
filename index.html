@@ -9,10 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/img/image-removebg-preview (1).png">
-    
 </head>
 <body class="bg-[#f8f9fc] min-h-screen text-slate-800 flex flex-col justify-between">
-    
 
     <div>
         <!-- Header Roxo Sólido -->
@@ -20,8 +18,7 @@
             <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
                 <div class="flex items-center gap-3">
                     <div class="bg-white/10 p-2.5 rounded-xl border border-white/20">
-                        <!-- <i data-lucide="backpack" class="w-6 h-6 text-yellow-300"></i> -->
-                         <img src="assets/img/image-removebg-preview (1).png" alt="logo escola" width="50px">
+                        <img src="assets/img/image-removebg-preview (1).png" alt="logo escolar" width="50px">
                     </div>
                     <div>
                         <h1 class="font-extrabold text-xl tracking-wide">Mochila Solidária</h1>
@@ -31,16 +28,22 @@
 
                 <!-- Navegação Superior -->
                 <nav class="flex items-center gap-2 bg-purple-900/40 p-1.5 rounded-full border border-purple-400/30 flex-wrap justify-center">
-                    <button onclick="showPage('home')" id="btn-home" class="nav-btn flex items-center gap-2 px-5 py-2 rounded-full font-bold text-sm transition-all bg-white text-purple-900 shadow-sm">
+                    <button onclick="showPage('home')" id="btn-home" class="nav-btn flex items-center gap-2 px-4 py-2 rounded-full font-bold text-sm transition-all bg-white text-purple-900 shadow-sm">
                         <i data-lucide="heart" class="w-4 h-4"></i> Home
                     </button>
-                    <button onclick="showPage('doar')" id="btn-doar" class="nav-btn flex items-center gap-2 px-5 py-2 rounded-full font-bold text-sm transition-all text-white hover:bg-white/10">
+                    <button onclick="showPage('doar')" id="btn-doar" class="nav-btn flex items-center gap-2 px-4 py-2 rounded-full font-bold text-sm transition-all text-white hover:bg-white/10">
                         <i data-lucide="hand-heart" class="w-4 h-4"></i> Quero Doar
                     </button>
-                    <button onclick="showPage('receber')" id="btn-receber" class="nav-btn flex items-center gap-2 px-5 py-2 rounded-full font-bold text-sm transition-all text-white hover:bg-white/10">
+                    <button onclick="showPage('receber')" id="btn-receber" class="nav-btn flex items-center gap-2 px-4 py-2 rounded-full font-bold text-sm transition-all text-white hover:bg-white/10">
                         <i data-lucide="graduation-cap" class="w-4 h-4"></i> Quero Receber
                     </button>
-                    <button onclick="showPage('admin')" id="btn-admin" class="nav-btn flex items-center gap-2 px-5 py-2 rounded-full font-bold text-sm transition-all text-white hover:bg-white/10">
+                    <button onclick="showPage('vender')" id="btn-vender" class="nav-btn flex items-center gap-2 px-4 py-2 rounded-full font-bold text-sm transition-all text-white hover:bg-white/10">
+                        <i data-lucide="tag" class="w-4 h-4"></i> Vender Item
+                    </button>
+                    <button onclick="showPage('comprar')" id="btn-comprar" class="nav-btn flex items-center gap-2 px-4 py-2 rounded-full font-bold text-sm transition-all text-white hover:bg-white/10">
+                        <i data-lucide="shopping-bag" class="w-4 h-4"></i> Comprar Itens
+                    </button>
+                    <button onclick="showPage('admin')" id="btn-admin" class="nav-btn flex items-center gap-2 px-4 py-2 rounded-full font-bold text-sm transition-all text-white hover:bg-white/10">
                         <i data-lucide="layout-grid" class="w-4 h-4"></i> Administração
                     </button>
                 </nav>
@@ -53,9 +56,7 @@
             <section id="home" class="page block animate-in">
                 <!-- Banner Destaque Roxo Claro -->
                 <div class="bg-[#f3e8ff] border border-purple-200 rounded-3xl p-10 text-center mb-10 shadow-sm">
-                    <h2 class="text-3xl md:text-5xl font-extrabold text-[#581c87] tracking-tight mb-3">
-                        
-                    </h2>
+                   
                     <h3 class="text-3xl md:text-5xl font-extrabold text-[#db2777] tracking-tight mb-4">
                         MOCHILA SOLIDÁRIA
                     </h3>
@@ -76,7 +77,7 @@
                                 <h4 class="font-extrabold text-lg text-pink-900 tracking-wide">OBJETIVO</h4>
                             </div>
                             <p class="text-slate-600 font-medium leading-relaxed mb-6">
-                                Facilitar o acesso a materiais didáticos e escolares por meio de doações, ajudando estudantes e famílias que precisam.
+                                Facilitar o acesso a materiais didáticos e escolares por meio de doações e feira solidária, ajudando estudantes e famílias.
                             </p>
                         </div>
                         <p class="text-center font-bold text-pink-700 italic text-sm">
@@ -93,22 +94,18 @@
                                 </div>
                                 <h4 class="font-extrabold text-lg text-blue-900 tracking-wide">COMO FUNCIONA</h4>
                             </div>
-                            <ul class="space-y-3 font-medium text-slate-600">
+                            <ul class="space-y-3 font-medium text-slate-600 text-sm">
                                 <li class="flex items-start gap-3">
                                     <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
-                                    Cadastro de materiais disponíveis.
+                                    Cadastro de materiais para doação ou venda.
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
-                                    Solicitação do item desejado.
+                                    Solicitação ou compra via Pix direto.
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
                                     Escola confere e combina a entrega.
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">4</span>
-                                    O material é reutilizado, reduzindo desperdício.
                                 </li>
                             </ul>
                         </div>
@@ -123,12 +120,11 @@
                                 </div>
                                 <h4 class="font-extrabold text-lg text-amber-900 tracking-wide">O QUE DOAR?</h4>
                             </div>
-                            <ul class="space-y-3 font-medium text-slate-600 mb-6">
+                            <ul class="space-y-3 font-medium text-slate-600 mb-6 text-sm">
                                 <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-amber-600 shrink-0"></i> Livros didáticos</li>
                                 <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-amber-600 shrink-0"></i> Cadernos com folhas</li>
                                 <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-amber-600 shrink-0"></i> Mochilas e Estojos</li>
                                 <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-amber-600 shrink-0"></i> Lápis, canetas, borrachas</li>
-                                <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-amber-600 shrink-0"></i> Réguas e calculadoras</li>
                             </ul>
                         </div>
                         <p class="text-center font-bold text-amber-800 italic text-sm">
@@ -216,7 +212,7 @@
                     </div>
                 </div>
 
-                <!-- Formulário de Solicitação (Quando clica num item) -->
+                <!-- Formulário de Solicitação -->
                 <div id="receber-form-view" class="hidden max-w-xl mx-auto">
                     <button onclick="voltarReceberGrid()" class="flex items-center text-slate-500 hover:text-slate-800 font-extrabold mb-6 transition-colors">
                         <i data-lucide="arrow-left" class="w-5 h-5 mr-2"></i> Voltar aos materiais
@@ -227,25 +223,78 @@
                         <form onsubmit="handleReceberSubmit(event)" class="space-y-6">
                             <div>
                                 <label class="block text-sm font-bold text-slate-700 mb-2">Nome do Aluno</label>
-                                <input type="text" required placeholder="Nome completo do estudante" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none font-medium">
+                                <input type="text" required placeholder="Nome completo do estudante" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-blue-500 outline-none font-medium">
                             </div>
                             <div>
                                 <label class="block text-sm font-bold text-slate-700 mb-2">Série / Turma</label>
-                                <input type="text" required placeholder="Ex: 6º Ano B" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none font-medium">
+                                <input type="text" required placeholder="Ex: 6º Ano B" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-blue-500 outline-none font-medium">
                             </div>
                             <div>
                                 <label class="block text-sm font-bold text-slate-700 mb-2">Responsável para Contato</label>
-                                <input type="text" required placeholder="Nome do pai, mãe ou responsável" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none font-medium">
+                                <input type="text" required placeholder="Nome do responsável" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-blue-500 outline-none font-medium">
                             </div>
                             <div>
                                 <label class="block text-sm font-bold text-slate-700 mb-2">Telefone de Contato</label>
-                                <input type="text" required placeholder="(00) 00000-0000" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none font-medium">
+                                <input type="text" required placeholder="(00) 00000-0000" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-blue-500 outline-none font-medium">
                             </div>
                             <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-extrabold py-4 rounded-2xl shadow-lg shadow-blue-200 transition-all flex items-center justify-center gap-2">
                                 <i data-lucide="send" class="w-5 h-5"></i> Enviar Solicitação
                             </button>
                         </form>
                     </div>
+                </div>
+            </section>
+
+            <!-- VENDER PAGE (NOVA) -->
+            <section id="vender" class="page hidden animate-in">
+                <div class="max-w-2xl mx-auto bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm">
+                    <div class="text-center mb-8">
+                        <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mx-auto mb-4 text-amber-600">
+                            <i data-lucide="tag" class="w-8 h-8"></i>
+                        </div>
+                        <h2 class="text-3xl font-extrabold text-slate-900 mb-2">Quero Vender / Anunciar</h2>
+                        <p class="text-slate-500 font-medium">Cadastre seu material seminovo para venda solidária. Informe sua chave Pix para receber o valor diretamente!</p>
+                    </div>
+
+                    <form onsubmit="handleVenderSubmit(event)" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Seu Nome / Vendedor</label>
+                            <input type="text" id="vendedor-nome" required placeholder="Ex: Carlos Eduardo" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-amber-500 outline-none font-medium">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Nome do Material</label>
+                                <input type="text" id="vendedor-item" required placeholder="Ex: Livro de Matemática 8º ano" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-amber-500 outline-none font-medium">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Preço (R$)</label>
+                                <input type="text" id="vendedor-preco" required placeholder="Ex: 25,00" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-amber-500 outline-none font-medium">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Sua Chave Pix (para receber o pagamento)</label>
+                            <input type="text" id="vendedor-pix" required placeholder="CPF, E-mail, Celular ou Chave Aleatória" class="w-full px-4 py-3.5 rounded-2xl border border-slate-200 focus:border-amber-500 outline-none font-medium bg-amber-50/40">
+                        </div>
+                        <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-extrabold py-4 rounded-2xl shadow-lg shadow-amber-200 transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="plus-circle" class="w-5 h-5"></i> Cadastrar Anúncio para Venda
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- COMPRAR PAGE (NOVA) -->
+            <section id="comprar" class="page hidden animate-in">
+                <div class="max-w-4xl mx-auto bg-white border border-slate-200/80 rounded-3xl p-8 md:p-12 shadow-sm text-center mb-8">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-4 text-emerald-600">
+                        <i data-lucide="shopping-bag" class="w-8 h-8"></i>
+                    </div>
+                    <h2 class="text-3xl font-extrabold text-slate-900 mb-2">Feirinha Solidária - Comprar Itens</h2>
+                    <p class="text-slate-500 font-medium">Adquira materiais escolares seminovos diretamente dos doadores por preços acessíveis via Pix.</p>
+                </div>
+
+                <!-- Grid de Itens à Venda -->
+                <div id="comprar-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    <!-- Dinâmico via JS -->
                 </div>
             </section>
 
@@ -257,7 +306,7 @@
                         <i data-lucide="lock" class="w-8 h-8"></i>
                     </div>
                     <h2 class="text-2xl font-extrabold text-slate-900 mb-2">Acesso Administrativo</h2>
-                    <p class="text-slate-500 font-medium text-sm mb-6">Faça login para gerenciar as doações e o estoque de materiais da escola.</p>
+                    <p class="text-slate-500 font-medium text-sm mb-6">Faça login para gerenciar as doações, estoque e itens à venda.</p>
                     
                     <div class="space-y-4 text-left">
                         <div>
@@ -283,12 +332,36 @@
                                 <h3 class="text-2xl font-extrabold text-slate-900">Estoque de Materiais Doados</h3>
                                 <p class="text-slate-500 text-sm font-medium">Itens disponíveis para entrega imediata aos alunos.</p>
                             </div>
-                            <span class="px-4 py-2 bg-purple-50 border border-purple-200 text-purple-900 rounded-2xl text-xs font-extrabold">Total de Itens: <span id="contador-itens">3</span></span>
+                            <span class="px-4 py-2 bg-purple-50 border border-purple-200 text-purple-900 rounded-2xl text-xs font-extrabold">Total: <span id="contador-itens">3</span></span>
                         </div>
+                        <div id="estoque-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+                    </div>
 
-                        <!-- Grid do Estoque -->
-                        <div id="estoque-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <!-- Renderizado via JS -->
+                    <!-- ITENS À VENDA (NOVA SEÇÃO ADMIN) -->
+                    <div class="bg-white border border-slate-200/80 rounded-3xl p-6 md:p-8 shadow-sm">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
+                            <div>
+                                <h3 class="text-2xl font-extrabold text-amber-900">Itens Anunciados para Venda</h3>
+                                <p class="text-slate-500 text-sm font-medium">Gerencie os produtos da feirinha solidária e chaves Pix cadastradas.</p>
+                            </div>
+                            <span class="px-4 py-2 bg-amber-50 border border-amber-200 text-amber-900 rounded-2xl text-xs font-extrabold">Total à Venda: <span id="contador-vendas">2</span></span>
+                        </div>
+                        
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead>
+                                    <tr class="border-b border-slate-100 text-slate-400 font-bold uppercase text-xs">
+                                        <th class="pb-3">Vendedor</th>
+                                        <th class="pb-3">Item</th>
+                                        <th class="pb-3">Preço</th>
+                                        <th class="pb-3">Chave Pix</th>
+                                        <th class="pb-3 text-right">Ação</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabela-admin-vendas" class="divide-y divide-slate-50 font-medium text-slate-600">
+                                    <!-- Renderizado via JS -->
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
@@ -371,7 +444,7 @@
         </main>
     </div>
 
-    <!-- RODAPÉ FIXO EM TODAS AS PÁGINAS -->
+    <!-- RODAPÉ FIXO -->
     <footer class="bg-[#1e293b] text-white py-8 mt-16 text-center border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-2">
             <p class="font-bold text-base flex items-center gap-2">
@@ -408,6 +481,28 @@
                     <button type="submit" class="flex-1 bg-purple-600 hover:bg-purple-700 text-white font-extrabold py-3.5 rounded-2xl shadow-lg shadow-purple-200 transition-colors">Confirmar</button>
                 </div>
             </form>
+        </div>
+    </div>
+
+    <!-- MODAL DE PIX PARA COMPRA -->
+    <div id="modal-pix" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md rounded-3xl shadow-2xl border-4 border-emerald-100 p-8 animate-in text-center">
+            <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-3 text-emerald-700">
+                <i data-lucide="qr-code" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-extrabold text-2xl text-emerald-900 mb-1">Pagamento via Pix</h3>
+            <p id="pix-item-info" class="font-bold text-slate-600 text-sm mb-4"></p>
+            
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 mb-6 text-left space-y-2">
+                <p class="text-xs font-bold text-slate-400 uppercase">Chave Pix do Vendedor:</p>
+                <div class="flex items-center justify-between bg-white border border-slate-200 p-3 rounded-xl">
+                    <span id="pix-chave-texto" class="font-mono font-bold text-slate-800 text-sm truncate mr-2"></span>
+                    <button onclick="copiarChavePix()" class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-lg transition-colors shrink-0">Copiar</button>
+                </div>
+                <p class="text-xs text-slate-500 pt-1">Após realizar o Pix, envie o comprovante para a escola para combinar a retirada!</p>
+            </div>
+
+            <button onclick="fecharModalPix()" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-700 font-extrabold py-3.5 rounded-2xl transition-colors">Fechar</button>
         </div>
     </div>
 
